@@ -9,16 +9,26 @@
 /* Begin PBXBuildFile section */
 		810DA1F6299EC42200D28D9F /* MapAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810DA1F5299EC42200D28D9F /* MapAppApp.swift */; };
 		810DA1F8299EC42200D28D9F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810DA1F7299EC42200D28D9F /* ContentView.swift */; };
-		810DA1FA299EC42300D28D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 810DA1F9299EC42300D28D9F /* Assets.xcassets */; };
 		810DA1FD299EC42300D28D9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 810DA1FC299EC42300D28D9F /* Preview Assets.xcassets */; };
+		810DA204299EC76B00D28D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 810DA203299EC76B00D28D9F /* Assets.xcassets */; };
+		810DA209299EC8F500D28D9F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810DA208299EC8F500D28D9F /* Location.swift */; };
+		810DA20C299ECA6D00D28D9F /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810DA20B299ECA6D00D28D9F /* LocationsDataService.swift */; };
+		810DA20E299ED49200D28D9F /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810DA20D299ED49200D28D9F /* LocationsView.swift */; };
+		810DA212299EDB2200D28D9F /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810DA211299EDB2200D28D9F /* LocationsViewModel.swift */; };
+		8150CDA229A0F505003C2ADF /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8150CDA129A0F505003C2ADF /* LocationsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		810DA1F2299EC42200D28D9F /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		810DA1F5299EC42200D28D9F /* MapAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppApp.swift; sourceTree = "<group>"; };
 		810DA1F7299EC42200D28D9F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		810DA1F9299EC42300D28D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		810DA1FC299EC42300D28D9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		810DA203299EC76B00D28D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		810DA208299EC8F500D28D9F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		810DA20B299ECA6D00D28D9F /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		810DA20D299ED49200D28D9F /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		810DA211299EDB2200D28D9F /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		8150CDA129A0F505003C2ADF /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,11 @@
 			children = (
 				810DA1F5299EC42200D28D9F /* MapAppApp.swift */,
 				810DA1F7299EC42200D28D9F /* ContentView.swift */,
-				810DA1F9299EC42300D28D9F /* Assets.xcassets */,
+				810DA20A299ECA0900D28D9F /* DataServices */,
+				810DA205299EC85100D28D9F /* Views */,
+				810DA207299EC86900D28D9F /* ViewModels */,
+				810DA206299EC85E00D28D9F /* Models */,
+				810DA203299EC76B00D28D9F /* Assets.xcassets */,
 				810DA1FB299EC42300D28D9F /* Preview Content */,
 			);
 			path = MapApp;
@@ -65,6 +79,39 @@
 				810DA1FC299EC42300D28D9F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		810DA205299EC85100D28D9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				810DA20D299ED49200D28D9F /* LocationsView.swift */,
+				8150CDA129A0F505003C2ADF /* LocationsListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		810DA206299EC85E00D28D9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				810DA208299EC8F500D28D9F /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		810DA207299EC86900D28D9F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				810DA211299EDB2200D28D9F /* LocationsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		810DA20A299ECA0900D28D9F /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				810DA20B299ECA6D00D28D9F /* LocationsDataService.swift */,
+			);
+			path = DataServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +172,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810DA204299EC76B00D28D9F /* Assets.xcassets in Resources */,
 				810DA1FD299EC42300D28D9F /* Preview Assets.xcassets in Resources */,
-				810DA1FA299EC42300D28D9F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810DA20C299ECA6D00D28D9F /* LocationsDataService.swift in Sources */,
+				8150CDA229A0F505003C2ADF /* LocationsListView.swift in Sources */,
+				810DA212299EDB2200D28D9F /* LocationsViewModel.swift in Sources */,
 				810DA1F8299EC42200D28D9F /* ContentView.swift in Sources */,
+				810DA20E299ED49200D28D9F /* LocationsView.swift in Sources */,
+				810DA209299EC8F500D28D9F /* Location.swift in Sources */,
 				810DA1F6299EC42200D28D9F /* MapAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
